@@ -1,0 +1,156 @@
+/*STYLE BACKGROUND*/
+body{
+  background: url(../img/bg.jpg);
+  background-repeat:repeat-x;
+  background-attachment:fixed;
+  background-size: cover;
+  position:absolute;
+  width: 100vw;
+  margin:0;
+  backdrop-filter: blur(5px);
+}
+/*style background head*/
+.head{
+  border-radius: 5px;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  box-shadow: 10px 10px 20px black;
+}
+.col-md-12 h3{
+  text-align: center;
+  color: white;
+}
+/*Style bouton suivant, précédent*/
+.bouton {
+ display: inline-block;
+  margin-left: 390px;	
+  padding: 10px;
+  background : transparent;
+  color: white;
+  padding: 8px 8px;
+  margin-top: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.bouton:hover{
+  text-decoration: none;
+  color :grey;
+  background: linear-gradient(to bottom right, lightgrey, lightblue);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+/*Style table des matières*/
+.table_des_matieres{
+  border-radius: 5px;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  box-shadow: 10px 10px 20px black;
+}
+.table_des_matieres a{
+  padding: 10px;
+  display: block;
+  color: white;
+}
+.table_des_matieres a:hover{
+  text-decoration: none;
+  color: grey;
+  transition: 0.5s;
+  background: linear-gradient(to bottom right, lightgrey, lightblue);
+  border-radius:20px;
+}
+/*Style background quizz*/
+.quizz{
+  border-radius: 5px;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  box-shadow: 10px 10px 20px black;
+}
+/*Couleur Label*/
+.quizz label{
+  display: block;
+  color: white;
+}
+/*Style Checkbox*/
+input[type=checkbox]{
+	position: relative;
+	width: 50px;
+	height: 20px;
+	-webkit-appearance :none;
+	background-color: lightgrey;
+	border-radius: 10px;
+	outline: none;
+	transition: 0.5s;
+}
+input[type=checkbox]:before{
+	position: absolute;
+	content: '';
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: white;
+	transition: 0.5s;
+}
+input:checked[type=checkbox]{
+	outline: none;
+	background-color: #03a9f4;
+}
+input:checked[type=checkbox]:before{
+	left:30px;
+}
+/*Style bouton valider*/
+.valider{
+  width: 100%;
+  background : transparent;
+  color: white;
+  padding: 8px 8px;
+  margin-top: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.valider:hover{
+  color:grey;
+  outline: none;
+  background:linear-gradient(to bottom right, lightgrey, lightblue);
+  border-radius:20px;
+  transition: 0.8s;
+}
+/*Style pagination*/
+.pagination {
+  display: inline-block;
+  margin-left: 300px;
+  }
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+ .pageActive {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 20px;
+}
+.pagination a:hover:not(.pageActive) {
+	background: linear-gradient(to bottom right, lightgrey, lightblue);
+	text-decoration : none;
+	border-radius: 20px;
+}
+.pagination a:hover{
+	text-decoration : none;
+	color: black;
+	transition:0.5s;
+	border-radius: 20px;
+}
+/*Style footer*/
+footer{
+	color: black;
+	display: block;
+	text-align: center;
+	padding: 20px;
+}
